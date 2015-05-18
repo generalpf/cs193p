@@ -24,7 +24,6 @@
 
 - (CardMatchingGame *)game
 {
-    self.matchesRequired.
     if (!_game) {
         _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
     }
