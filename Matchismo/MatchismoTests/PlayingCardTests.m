@@ -1,5 +1,5 @@
 //
-//  PlayingCardTest.m
+//  PlayingCardTests.m
 //  Matchismo
 //
 //  Created by Ryan Walberg on 2015-05-18.
@@ -10,14 +10,14 @@
 #import <XCTest/XCTest.h>
 #import "PlayingCard.h"
 
-@interface PlayingCardTest : XCTestCase
+@interface PlayingCardTests : XCTestCase
 @property (strong, nonatomic) PlayingCard *aceOfSpades;
 @property (strong, nonatomic) PlayingCard *jackOfClubs;
 @property (strong, nonatomic) PlayingCard *aceOfClubs;
 @property (strong, nonatomic) PlayingCard *jackOfSpades;
 @end
 
-@implementation PlayingCardTest
+@implementation PlayingCardTests
 
 - (void)setUp {
     [super setUp];
