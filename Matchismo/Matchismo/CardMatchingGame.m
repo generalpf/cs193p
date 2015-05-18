@@ -50,7 +50,7 @@ static const int MISMATCH_PENALTY = 2;
 static const int MATCH_BONUS = 4;
 static const int COST_TO_CHOOSE = 1;
 
-- (void)chooseCardAtIndex:(NSUInteger)index
+- (void)chooseCardAtIndex:(NSUInteger)index cardCount:(NSUInteger)cardCount onMatch:(onMatchBlock) onMatch
 {
     Card *card = [self cardAtIndex:index];
     // matched cards are out of the game
@@ -67,9 +67,11 @@ static const int COST_TO_CHOOSE = 1;
                         // remove both cards
                         card.matched = YES;
                         otherCard.matched = YES;
+                        onMatch(matchScore * MATCH_BONUS, @[card, otherCard]);
                     } else {
                         self.score -= MISMATCH_PENALTY;
                         otherCard.chosen = NO;
+                        onMatch(-MISMATCH_PENALTY, @[card, otherCard]);
                     }
                     break; // can only choose 2 cards for now
                 }
