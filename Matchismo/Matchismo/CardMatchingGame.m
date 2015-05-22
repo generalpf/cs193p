@@ -11,6 +11,7 @@
 @interface CardMatchingGame()
 @property (nonatomic, readwrite) NSInteger score;
 @property (nonatomic, strong) NSMutableArray *cards; // of Card
+@property (nonatomic, strong) NSMutableArray *chosenCards;
 @end
 
 @implementation CardMatchingGame
@@ -37,6 +38,8 @@
                 break;
             }
         }
+        
+        self.chosenCards = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -47,8 +50,6 @@
 }
 
 static const int MISMATCH_PENALTY = 2;
-static const int MATCH_BONUS = 4;
-static const int COST_TO_CHOOSE = 1;
 
 - (void)chooseCardAtIndex:(NSUInteger)index cardCount:(NSUInteger)cardCount onMatch:(onMatchBlock) onMatch
 {
@@ -57,28 +58,44 @@ static const int COST_TO_CHOOSE = 1;
     if (!card.isMatched) {
         if (card.isChosen) {
             card.chosen = NO;
+            [self.chosenCards removeObject:card];
         } else {
-            // match against other chosen cards
-            for (Card *otherCard in self.cards) {
-                if (otherCard.isChosen && !otherCard.isMatched) {
-                    int matchScore = [card match:@[otherCard]];
-                    if (matchScore) {
-                        self.score += matchScore * MATCH_BONUS;
-                        // remove both cards
-                        card.matched = YES;
-                        otherCard.matched = YES;
-                        onMatch(matchScore * MATCH_BONUS, @[card, otherCard]);
-                    } else {
-                        self.score -= MISMATCH_PENALTY;
-                        otherCard.chosen = NO;
-                        onMatch(-MISMATCH_PENALTY, @[card, otherCard]);
-                    }
-                    break; // can only choose 2 cards for now
-                }
-            }
-            self.score -= COST_TO_CHOOSE;
-            // card is now chosen
             card.chosen = YES;
+            [self.chosenCards addObject:card];
+            
+            // have we chosen the right amount of cards?
+            if ([self.chosenCards count] == cardCount) {
+                // check for a match anywhere in here
+                // start with card 0, check against 1..n
+                // then check card 1 against 2..n
+                // all the way up to n-1
+                int bestMatchScore = 0;
+                for (int i = 0; i < [self.chosenCards count] - 1; i++) {
+                    Card *c = self.chosenCards[i];
+                    int matchScore = [c match:[self.chosenCards subarrayWithRange:NSMakeRange(i + 1, [self.chosenCards count] - i - 1)]];
+                    if (matchScore > bestMatchScore) {
+                        bestMatchScore = matchScore;
+                    }
+                }
+                // was there a match?
+                if (bestMatchScore) {
+                    self.score += bestMatchScore * (5 - cardCount);
+                    onMatch(bestMatchScore * (5 - cardCount), self.chosenCards);
+                } else {
+                    self.score -= MISMATCH_PENALTY;
+                    onMatch(-MISMATCH_PENALTY, self.chosenCards);
+                }
+                
+                // unchoose all cards, and if positive points were scored, mark them matched
+                for (Card *card in self.chosenCards) {
+                    if (bestMatchScore) {
+                        card.matched = YES;
+                    } else {
+                        card.chosen = NO;
+                    }
+                }
+                [self.chosenCards removeAllObjects];
+            }
         }
     }
 }

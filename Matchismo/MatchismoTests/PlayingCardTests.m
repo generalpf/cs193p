@@ -15,6 +15,7 @@
 @property (strong, nonatomic) PlayingCard *jackOfClubs;
 @property (strong, nonatomic) PlayingCard *aceOfClubs;
 @property (strong, nonatomic) PlayingCard *jackOfSpades;
+@property (strong, nonatomic) PlayingCard *queenOfSpades;
 @end
 
 @implementation PlayingCardTests
@@ -37,6 +38,10 @@
     self.jackOfSpades = [[PlayingCard alloc] init];
     self.jackOfSpades.rank = 11;
     self.jackOfSpades.suit = @"♠︎";
+    
+    self.queenOfSpades = [[PlayingCard alloc] init];
+    self.queenOfSpades.rank = 12;
+    self.queenOfSpades.suit = @"♠︎";
 }
 
 - (void)testMatchAgainstOne {
@@ -48,5 +53,9 @@
     
     XCTAssertEqual(4, [self.aceOfSpades match:@[ self.aceOfSpades ]]);
 }
+
+/*- (void)testMatchAgainstMany {
+    XCTAssertEqual(2, [self.aceOfSpades match:@[ self.jackOfSpades, self.queenOfSpades ]]);
+}*/
 
 @end
