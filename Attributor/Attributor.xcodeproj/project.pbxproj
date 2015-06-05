@@ -14,6 +14,7 @@
 		3AF8DBB61B220DA40041A115 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF8DBB51B220DA40041A115 /* Images.xcassets */; };
 		3AF8DBB91B220DA40041A115 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF8DBB71B220DA40041A115 /* LaunchScreen.xib */; };
 		3AF8DBC51B220DA40041A115 /* AttributorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8DBC41B220DA40041A115 /* AttributorTests.m */; };
+		3AF8DBD01B2216C60041A115 /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8DBCF1B2216C60041A115 /* TextStatsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		3AF8DBBE1B220DA40041A115 /* AttributorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF8DBC31B220DA40041A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF8DBC41B220DA40041A115 /* AttributorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributorTests.m; sourceTree = "<group>"; };
+		3AF8DBCE1B2216C60041A115 /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		3AF8DBCF1B2216C60041A115 /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				3AF8DBAF1B220DA40041A115 /* AttributorViewController.h */,
 				3AF8DBB01B220DA40041A115 /* AttributorViewController.m */,
 				3AF8DBB21B220DA40041A115 /* Main.storyboard */,
+				3AF8DBCE1B2216C60041A115 /* TextStatsViewController.h */,
+				3AF8DBCF1B2216C60041A115 /* TextStatsViewController.m */,
 				3AF8DBB51B220DA40041A115 /* Images.xcassets */,
 				3AF8DBB71B220DA40041A115 /* LaunchScreen.xib */,
 				3AF8DBA81B220DA40041A115 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				3AF8DBB11B220DA40041A115 /* AttributorViewController.m in Sources */,
 				3AF8DBAE1B220DA40041A115 /* AppDelegate.m in Sources */,
 				3AF8DBAB1B220DA40041A115 /* main.m in Sources */,
+				3AF8DBD01B2216C60041A115 /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
