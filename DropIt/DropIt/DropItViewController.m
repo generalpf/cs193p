@@ -20,7 +20,7 @@
 
 static const CGSize DROP_SIZE = { 40, 40 };
 
-#pragma mark Properties
+#pragma mark - Properties
 
 - (UIDynamicAnimator *)animator
 {
@@ -40,21 +40,21 @@ static const CGSize DROP_SIZE = { 40, 40 };
     return _dropItBehavior;
 }
 
-#pragma mark UIDynamicAnimatorDelegate
+#pragma mark - UIDynamicAnimatorDelegate
 
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator
 {
     [self removeCompletedRows];
 }
 
-#pragma mark Actions
+#pragma mark - Actions
 
 - (IBAction)tap:(UITapGestureRecognizer *)sender
 {
     [self drop];
 }
 
-#pragma mark Core
+#pragma mark - Core
 
 - (BOOL)removeCompletedRows
 {
@@ -128,7 +128,7 @@ static const CGSize DROP_SIZE = { 40, 40 };
     return [UIColor blackColor];
 }
 
-#pragma mark Lifecycle
+#pragma mark - Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
