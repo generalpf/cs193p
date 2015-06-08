@@ -15,6 +15,10 @@
 		3ACAF8721B25C4A400FA1A48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ACAF8701B25C4A400FA1A48 /* LaunchScreen.xib */; };
 		3ACAF87E1B25C4A400FA1A48 /* SuperCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF87D1B25C4A400FA1A48 /* SuperCardTests.m */; };
 		3ACAF8891B25C57D00FA1A48 /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF8881B25C57D00FA1A48 /* PlayingCardView.m */; };
+		3ACAF8931B25D21F00FA1A48 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF88C1B25D21F00FA1A48 /* Card.m */; };
+		3ACAF8941B25D21F00FA1A48 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF88E1B25D21F00FA1A48 /* Deck.m */; };
+		3ACAF8951B25D21F00FA1A48 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF8901B25D21F00FA1A48 /* PlayingCard.m */; };
+		3ACAF8961B25D21F00FA1A48 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF8921B25D21F00FA1A48 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,14 @@
 		3ACAF87D1B25C4A400FA1A48 /* SuperCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardTests.m; sourceTree = "<group>"; };
 		3ACAF8871B25C57D00FA1A48 /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
 		3ACAF8881B25C57D00FA1A48 /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
+		3ACAF88B1B25D21F00FA1A48 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		3ACAF88C1B25D21F00FA1A48 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		3ACAF88D1B25D21F00FA1A48 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		3ACAF88E1B25D21F00FA1A48 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		3ACAF88F1B25D21F00FA1A48 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		3ACAF8901B25D21F00FA1A48 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		3ACAF8911B25D21F00FA1A48 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		3ACAF8921B25D21F00FA1A48 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,7 @@
 		3ACAF8601B25C4A400FA1A48 /* SuperCard */ = {
 			isa = PBXGroup;
 			children = (
+				3ACAF88A1B25D20B00FA1A48 /* model */,
 				3ACAF8681B25C4A400FA1A48 /* SuperCardViewController.h */,
 				3ACAF8691B25C4A400FA1A48 /* SuperCardViewController.m */,
 				3ACAF86B1B25C4A400FA1A48 /* Main.storyboard */,
@@ -122,6 +135,21 @@
 				3ACAF87C1B25C4A400FA1A48 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3ACAF88A1B25D20B00FA1A48 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3ACAF88B1B25D21F00FA1A48 /* Card.h */,
+				3ACAF88C1B25D21F00FA1A48 /* Card.m */,
+				3ACAF88D1B25D21F00FA1A48 /* Deck.h */,
+				3ACAF88E1B25D21F00FA1A48 /* Deck.m */,
+				3ACAF88F1B25D21F00FA1A48 /* PlayingCard.h */,
+				3ACAF8901B25D21F00FA1A48 /* PlayingCard.m */,
+				3ACAF8911B25D21F00FA1A48 /* PlayingCardDeck.h */,
+				3ACAF8921B25D21F00FA1A48 /* PlayingCardDeck.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ACAF8931B25D21F00FA1A48 /* Card.m in Sources */,
+				3ACAF8961B25D21F00FA1A48 /* PlayingCardDeck.m in Sources */,
 				3ACAF86A1B25C4A400FA1A48 /* SuperCardViewController.m in Sources */,
+				3ACAF8951B25D21F00FA1A48 /* PlayingCard.m in Sources */,
 				3ACAF8891B25C57D00FA1A48 /* PlayingCardView.m in Sources */,
 				3ACAF8671B25C4A400FA1A48 /* AppDelegate.m in Sources */,
+				3ACAF8941B25D21F00FA1A48 /* Deck.m in Sources */,
 				3ACAF8641B25C4A400FA1A48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
