@@ -104,4 +104,5 @@ static const int MISMATCH_PENALTY = 2;
 {
     return (index < [self.cards count]) ? self.cards[index] : nil;
 }
+
 @end

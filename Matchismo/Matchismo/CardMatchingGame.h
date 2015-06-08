@@ -16,7 +16,9 @@ typedef void (^onMatchBlock)(NSInteger, NSArray *);
 // designated initializer
 - (instancetype)initWithCardCount:(NSUInteger)count
                         usingDeck:(Deck *)deck;
-- (void)chooseCardAtIndex:(NSUInteger)index cardCount:(NSUInteger)cardCount onMatch:(onMatchBlock) onMatch;
+- (void)chooseCardAtIndex:(NSUInteger)index
+                cardCount:(NSUInteger)cardCount
+                  onMatch:(onMatchBlock) onMatch;
 - (Card *)cardAtIndex:(NSUInteger)index;
 
 @property (nonatomic, readonly) NSInteger score;

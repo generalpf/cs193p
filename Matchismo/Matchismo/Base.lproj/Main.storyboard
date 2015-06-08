@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pje-kH-OxG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -9,8 +9,7 @@
         <!--Matchismo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <viewController title="Matchismo" definesPresentationContext="YES" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Matchismo" definesPresentationContext="YES" id="vXZ-lx-hvc" customClass="MatchThreeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -58,7 +57,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTh-jS-lnB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTh-jS-lnB">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="ITF-bd-SDr"/>
@@ -85,7 +84,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wPF-Wf-VTx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oub-Pr-dKh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oub-Pr-dKh">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="IAB-qI-EOs"/>
@@ -112,7 +111,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zf3-3y-bEt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-vC-4Iq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-vC-4Iq">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="ej8-Tm-8Nv"/>
@@ -139,7 +138,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="inZ-1P-dUQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYh-r2-JD9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYh-r2-JD9">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="17F-WO-yHb"/>
@@ -166,7 +165,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Npu-Ck-dkE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgC-8h-zpr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgC-8h-zpr">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="1Hj-zq-L8r"/>
@@ -193,7 +192,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q4G-QZ-2P7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dde-HS-MFI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dde-HS-MFI">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="QZp-xi-Ddu"/>
@@ -220,7 +219,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b3n-Qs-qaf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-cq-Yty">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-cq-Yty">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="EXO-le-lTF"/>
@@ -247,7 +246,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HXJ-hm-Vry"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLW-8l-IdR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLW-8l-IdR">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="mlF-2g-pCm"/>
@@ -274,7 +273,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Ih-If-er7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XE-Dc-PTp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XE-Dc-PTp">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="dfS-c6-afx"/>
@@ -301,7 +300,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TBk-HN-RLL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHW-Nr-oYp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHW-Nr-oYp">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="BRt-Dp-2Ko"/>
@@ -328,7 +327,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MlC-CG-eh5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-hu-83B">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-hu-83B">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="apI-ok-5Jf"/>
@@ -355,7 +354,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qp3-Lt-dkG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHM-Bx-aTL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHM-Bx-aTL">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="gFP-HU-wDj"/>
@@ -382,7 +381,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Cy-0l-pmt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HF-za-YYR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HF-za-YYR">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="haQ-Tg-Vue"/>
@@ -409,7 +408,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mco-nq-dsD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmk-fT-cU6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmk-fT-cU6">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="eLg-Xc-ADX"/>
@@ -436,7 +435,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hqm-ZX-Wdh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cz-Gh-6fr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cz-Gh-6fr">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="FQ2-QT-ZlE"/>
@@ -463,7 +462,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DMH-yM-sgg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdp-7C-wxS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdp-7C-wxS">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="76j-bJ-QLW"/>
@@ -490,7 +489,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cm9-kZ-pSR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4y-eZ-hEm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4y-eZ-hEm">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="AJt-q2-sbV"/>
@@ -517,7 +516,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="irC-tR-d5F"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckN-hR-bBN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckN-hR-bBN">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="gkn-PR-sI6"/>
@@ -544,7 +543,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nOV-Wx-vi3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlJ-bH-xDy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlJ-bH-xDy">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9bj-Jg-L1c"/>
@@ -571,7 +570,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ELk-X5-NSN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzn-0J-Igz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzn-0J-Igz">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="QSu-Ey-K6V"/>
@@ -598,7 +597,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qlc-ie-Bp1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="277-hz-YHT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="277-hz-YHT">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="3Ez-SV-fLc"/>
@@ -625,7 +624,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fYj-zx-C5d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91z-eB-0e8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91z-eB-0e8">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="VSk-hf-IgI"/>
@@ -652,7 +651,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kdI-tC-iyL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylu-SB-upB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylu-SB-upB">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="IdH-OS-wSi"/>
@@ -679,7 +678,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pvz-nG-JV4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4r-RC-NZC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4r-RC-NZC">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8I7-r5-QeP"/>
@@ -706,7 +705,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ziI-X0-ORw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUc-RY-inB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUc-RY-inB">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="aaS-xB-7uc"/>
@@ -733,7 +732,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="452-cc-qGo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-xq-s0d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdW-xq-s0d">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2FF-Xx-vTm"/>
@@ -760,7 +759,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Srp-4t-sIz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAm-GT-O2e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAm-GT-O2e">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="3fd-2Q-ynf"/>
@@ -787,7 +786,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="COT-cJ-WtX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zja-19-ufS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zja-19-ufS">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="heD-fU-TUQ"/>
@@ -814,7 +813,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JLG-Kt-jXx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAG-gk-OVZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAG-gk-OVZ">
                                 <rect key="frame" x="255" y="245" width="91" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="EPx-pE-ZUc"/>
@@ -978,75 +977,75 @@
                                 <exclude reference="BAG-gk-OVZ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="44Y-6j-M57"/>
-                                <exclude reference="lRe-RE-zmW"/>
-                                <exclude reference="Gu5-Yu-goK"/>
-                                <exclude reference="MsK-U2-n7Q"/>
-                                <exclude reference="Mcs-LM-LKn"/>
-                                <exclude reference="OMJ-ye-svS"/>
-                                <exclude reference="76h-M8-aG6"/>
-                                <exclude reference="UaE-xU-7LI"/>
-                                <exclude reference="b4V-Di-9hZ"/>
-                                <exclude reference="tOB-MN-Xnk"/>
-                                <exclude reference="d2a-Z9-wFS"/>
-                                <exclude reference="mg6-Oo-ozV"/>
-                                <exclude reference="mJU-wE-lHv"/>
-                                <exclude reference="rTl-iV-oWv"/>
-                                <exclude reference="Kh0-YH-2a4"/>
-                                <exclude reference="Qyu-AA-FBX"/>
-                                <exclude reference="ExX-LQ-c5Y"/>
-                                <exclude reference="nqa-lH-GeK"/>
-                                <exclude reference="6AI-G7-RfK"/>
-                                <exclude reference="mAz-LK-umX"/>
-                                <exclude reference="bHd-Av-gvF"/>
-                                <exclude reference="d4a-z8-4rH"/>
-                                <exclude reference="YYR-9D-m3g"/>
-                                <exclude reference="eg5-gg-f3O"/>
-                                <exclude reference="Icv-qo-bjy"/>
-                                <exclude reference="Ooz-xz-3jt"/>
-                                <exclude reference="Qdp-gj-vuT"/>
-                                <exclude reference="fKi-uV-XN0"/>
-                                <exclude reference="2sk-hk-I8X"/>
-                                <exclude reference="q2f-qd-QBc"/>
-                                <exclude reference="0fq-gD-yNV"/>
-                                <exclude reference="QPT-Ce-D93"/>
-                                <exclude reference="4Cs-rW-el8"/>
-                                <exclude reference="mbd-2t-Zaf"/>
-                                <exclude reference="MbY-89-Fus"/>
-                                <exclude reference="rgI-76-afb"/>
-                                <exclude reference="KuL-Gc-Jpf"/>
-                                <exclude reference="U8g-wT-uWg"/>
-                                <exclude reference="Lom-5k-6rs"/>
-                                <exclude reference="xmZ-8h-bIe"/>
-                                <exclude reference="3RY-kS-age"/>
-                                <exclude reference="mzz-Vf-Jgw"/>
-                                <exclude reference="IoU-I7-FN6"/>
-                                <exclude reference="iHn-5F-4LK"/>
-                                <exclude reference="due-GQ-S7Q"/>
-                                <exclude reference="i1P-jz-Xuo"/>
-                                <exclude reference="WDE-w0-dV7"/>
-                                <exclude reference="zUc-nC-eD0"/>
-                                <exclude reference="HZh-YM-fiA"/>
-                                <exclude reference="kV4-jF-n1e"/>
-                                <exclude reference="EJL-8d-43w"/>
-                                <exclude reference="wga-T7-kAl"/>
-                                <exclude reference="Dzb-RR-lqj"/>
-                                <exclude reference="PvQ-ZL-RJG"/>
-                                <exclude reference="PLF-fY-iB3"/>
-                                <exclude reference="xdH-nv-VDY"/>
-                                <exclude reference="S2B-QN-rrb"/>
-                                <exclude reference="Y4X-I3-UbZ"/>
-                                <exclude reference="EYd-d6-3Rt"/>
-                                <exclude reference="qg6-Ym-FGC"/>
-                                <exclude reference="1Ec-gw-OaF"/>
-                                <exclude reference="ZEV-B3-xmN"/>
+                                <exclude reference="cHY-by-oB4"/>
                                 <exclude reference="e3x-ka-yHY"/>
-                                <exclude reference="Pux-hF-M6f"/>
                                 <exclude reference="Ggr-Ez-qGD"/>
                                 <exclude reference="LVH-1p-wrx"/>
                                 <exclude reference="ap7-Nz-CYh"/>
                                 <exclude reference="yTo-tb-2kK"/>
-                                <exclude reference="cHY-by-oB4"/>
+                                <exclude reference="1Ec-gw-OaF"/>
+                                <exclude reference="ZEV-B3-xmN"/>
+                                <exclude reference="Pux-hF-M6f"/>
+                                <exclude reference="44Y-6j-M57"/>
+                                <exclude reference="lRe-RE-zmW"/>
+                                <exclude reference="3RY-kS-age"/>
+                                <exclude reference="mzz-Vf-Jgw"/>
+                                <exclude reference="Icv-qo-bjy"/>
+                                <exclude reference="Ooz-xz-3jt"/>
+                                <exclude reference="6AI-G7-RfK"/>
+                                <exclude reference="mAz-LK-umX"/>
+                                <exclude reference="HZh-YM-fiA"/>
+                                <exclude reference="kV4-jF-n1e"/>
+                                <exclude reference="ExX-LQ-c5Y"/>
+                                <exclude reference="nqa-lH-GeK"/>
+                                <exclude reference="EYd-d6-3Rt"/>
+                                <exclude reference="qg6-Ym-FGC"/>
+                                <exclude reference="due-GQ-S7Q"/>
+                                <exclude reference="i1P-jz-Xuo"/>
+                                <exclude reference="IoU-I7-FN6"/>
+                                <exclude reference="iHn-5F-4LK"/>
+                                <exclude reference="4Cs-rW-el8"/>
+                                <exclude reference="mbd-2t-Zaf"/>
+                                <exclude reference="KuL-Gc-Jpf"/>
+                                <exclude reference="U8g-wT-uWg"/>
+                                <exclude reference="b4V-Di-9hZ"/>
+                                <exclude reference="tOB-MN-Xnk"/>
+                                <exclude reference="bHd-Av-gvF"/>
+                                <exclude reference="d4a-z8-4rH"/>
+                                <exclude reference="Lom-5k-6rs"/>
+                                <exclude reference="xmZ-8h-bIe"/>
+                                <exclude reference="PLF-fY-iB3"/>
+                                <exclude reference="xdH-nv-VDY"/>
+                                <exclude reference="WDE-w0-dV7"/>
+                                <exclude reference="zUc-nC-eD0"/>
+                                <exclude reference="EJL-8d-43w"/>
+                                <exclude reference="wga-T7-kAl"/>
+                                <exclude reference="Qdp-gj-vuT"/>
+                                <exclude reference="fKi-uV-XN0"/>
+                                <exclude reference="Mcs-LM-LKn"/>
+                                <exclude reference="OMJ-ye-svS"/>
+                                <exclude reference="d2a-Z9-wFS"/>
+                                <exclude reference="mg6-Oo-ozV"/>
+                                <exclude reference="mJU-wE-lHv"/>
+                                <exclude reference="rTl-iV-oWv"/>
+                                <exclude reference="Gu5-Yu-goK"/>
+                                <exclude reference="MsK-U2-n7Q"/>
+                                <exclude reference="76h-M8-aG6"/>
+                                <exclude reference="UaE-xU-7LI"/>
+                                <exclude reference="MbY-89-Fus"/>
+                                <exclude reference="rgI-76-afb"/>
+                                <exclude reference="2sk-hk-I8X"/>
+                                <exclude reference="q2f-qd-QBc"/>
+                                <exclude reference="YYR-9D-m3g"/>
+                                <exclude reference="eg5-gg-f3O"/>
+                                <exclude reference="0fq-gD-yNV"/>
+                                <exclude reference="QPT-Ce-D93"/>
+                                <exclude reference="Dzb-RR-lqj"/>
+                                <exclude reference="PvQ-ZL-RJG"/>
+                                <exclude reference="Kh0-YH-2a4"/>
+                                <exclude reference="Qyu-AA-FBX"/>
+                                <exclude reference="S2B-QN-rrb"/>
+                                <exclude reference="Y4X-I3-UbZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1056,12 +1055,12 @@
                                 <include reference="EWa-0d-jjN"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="cHY-by-oB4"/>
+                                <include reference="Ggr-Ez-qGD"/>
+                                <include reference="ap7-Nz-CYh"/>
                                 <include reference="1Ec-gw-OaF"/>
                                 <include reference="ZEV-B3-xmN"/>
                                 <include reference="Pux-hF-M6f"/>
-                                <include reference="Ggr-Ez-qGD"/>
-                                <include reference="ap7-Nz-CYh"/>
-                                <include reference="cHY-by-oB4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1098,72 +1097,73 @@
                                 <include reference="BAG-gk-OVZ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="e3x-ka-yHY"/>
+                                <include reference="LVH-1p-wrx"/>
+                                <include reference="yTo-tb-2kK"/>
                                 <include reference="44Y-6j-M57"/>
                                 <include reference="lRe-RE-zmW"/>
-                                <include reference="Gu5-Yu-goK"/>
-                                <include reference="MsK-U2-n7Q"/>
-                                <include reference="Mcs-LM-LKn"/>
-                                <include reference="OMJ-ye-svS"/>
-                                <include reference="76h-M8-aG6"/>
-                                <include reference="UaE-xU-7LI"/>
+                                <include reference="3RY-kS-age"/>
+                                <include reference="mzz-Vf-Jgw"/>
+                                <include reference="Icv-qo-bjy"/>
+                                <include reference="Ooz-xz-3jt"/>
+                                <include reference="6AI-G7-RfK"/>
+                                <include reference="mAz-LK-umX"/>
+                                <include reference="HZh-YM-fiA"/>
+                                <include reference="kV4-jF-n1e"/>
+                                <include reference="ExX-LQ-c5Y"/>
+                                <include reference="nqa-lH-GeK"/>
+                                <include reference="EYd-d6-3Rt"/>
+                                <include reference="qg6-Ym-FGC"/>
+                                <include reference="due-GQ-S7Q"/>
+                                <include reference="i1P-jz-Xuo"/>
+                                <include reference="IoU-I7-FN6"/>
+                                <include reference="iHn-5F-4LK"/>
+                                <include reference="4Cs-rW-el8"/>
+                                <include reference="mbd-2t-Zaf"/>
+                                <include reference="KuL-Gc-Jpf"/>
+                                <include reference="U8g-wT-uWg"/>
                                 <include reference="b4V-Di-9hZ"/>
                                 <include reference="tOB-MN-Xnk"/>
+                                <include reference="bHd-Av-gvF"/>
+                                <include reference="d4a-z8-4rH"/>
+                                <include reference="Lom-5k-6rs"/>
+                                <include reference="xmZ-8h-bIe"/>
+                                <include reference="PLF-fY-iB3"/>
+                                <include reference="xdH-nv-VDY"/>
+                                <include reference="WDE-w0-dV7"/>
+                                <include reference="zUc-nC-eD0"/>
+                                <include reference="EJL-8d-43w"/>
+                                <include reference="wga-T7-kAl"/>
+                                <include reference="Qdp-gj-vuT"/>
+                                <include reference="fKi-uV-XN0"/>
+                                <include reference="Mcs-LM-LKn"/>
+                                <include reference="OMJ-ye-svS"/>
                                 <include reference="d2a-Z9-wFS"/>
                                 <include reference="mg6-Oo-ozV"/>
                                 <include reference="mJU-wE-lHv"/>
                                 <include reference="rTl-iV-oWv"/>
-                                <include reference="Kh0-YH-2a4"/>
-                                <include reference="Qyu-AA-FBX"/>
-                                <include reference="ExX-LQ-c5Y"/>
-                                <include reference="nqa-lH-GeK"/>
-                                <include reference="6AI-G7-RfK"/>
-                                <include reference="mAz-LK-umX"/>
-                                <include reference="bHd-Av-gvF"/>
-                                <include reference="d4a-z8-4rH"/>
-                                <include reference="YYR-9D-m3g"/>
-                                <include reference="eg5-gg-f3O"/>
-                                <include reference="Icv-qo-bjy"/>
-                                <include reference="Ooz-xz-3jt"/>
-                                <include reference="Qdp-gj-vuT"/>
-                                <include reference="fKi-uV-XN0"/>
-                                <include reference="2sk-hk-I8X"/>
-                                <include reference="q2f-qd-QBc"/>
-                                <include reference="0fq-gD-yNV"/>
-                                <include reference="QPT-Ce-D93"/>
-                                <include reference="4Cs-rW-el8"/>
-                                <include reference="mbd-2t-Zaf"/>
+                                <include reference="Gu5-Yu-goK"/>
+                                <include reference="MsK-U2-n7Q"/>
+                                <include reference="76h-M8-aG6"/>
+                                <include reference="UaE-xU-7LI"/>
                                 <include reference="MbY-89-Fus"/>
                                 <include reference="rgI-76-afb"/>
-                                <include reference="KuL-Gc-Jpf"/>
-                                <include reference="U8g-wT-uWg"/>
-                                <include reference="Lom-5k-6rs"/>
-                                <include reference="xmZ-8h-bIe"/>
-                                <include reference="3RY-kS-age"/>
-                                <include reference="mzz-Vf-Jgw"/>
-                                <include reference="IoU-I7-FN6"/>
-                                <include reference="iHn-5F-4LK"/>
-                                <include reference="due-GQ-S7Q"/>
-                                <include reference="i1P-jz-Xuo"/>
-                                <include reference="WDE-w0-dV7"/>
-                                <include reference="zUc-nC-eD0"/>
-                                <include reference="HZh-YM-fiA"/>
-                                <include reference="kV4-jF-n1e"/>
-                                <include reference="EJL-8d-43w"/>
-                                <include reference="wga-T7-kAl"/>
+                                <include reference="2sk-hk-I8X"/>
+                                <include reference="q2f-qd-QBc"/>
+                                <include reference="YYR-9D-m3g"/>
+                                <include reference="eg5-gg-f3O"/>
+                                <include reference="0fq-gD-yNV"/>
+                                <include reference="QPT-Ce-D93"/>
                                 <include reference="Dzb-RR-lqj"/>
                                 <include reference="PvQ-ZL-RJG"/>
-                                <include reference="PLF-fY-iB3"/>
-                                <include reference="xdH-nv-VDY"/>
+                                <include reference="Kh0-YH-2a4"/>
+                                <include reference="Qyu-AA-FBX"/>
                                 <include reference="S2B-QN-rrb"/>
                                 <include reference="Y4X-I3-UbZ"/>
-                                <include reference="EYd-d6-3Rt"/>
-                                <include reference="qg6-Ym-FGC"/>
-                                <include reference="e3x-ka-yHY"/>
-                                <include reference="LVH-1p-wrx"/>
-                                <include reference="yTo-tb-2kK"/>
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Match 3" id="q0T-2G-2sL"/>
                     <connections>
                         <outlet property="cardCount" destination="EWa-0d-jjN" id="m9g-he-oIg"/>
                         <outlet property="scoreLabel" destination="ufq-7E-8Ff" id="NA6-Qe-TZ0"/>
@@ -1200,6 +1200,46 @@
                         <outletCollection property="cardButtons" destination="dde-HS-MFI" id="PSj-eA-VbG"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075.5" y="239.25"/>
+        </scene>
+        <!--Set-->
+        <scene sceneID="1VB-Q7-tQ5">
+            <objects>
+                <viewController id="hSb-Hb-ya1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4vf-lE-RCz"/>
+                        <viewControllerLayoutGuide type="bottom" id="H51-fp-NDb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LwJ-4u-1Oe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Set" id="pqI-Xp-7dZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akd-CX-ksl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="882"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oVN-X4-8BJ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pje-kH-OxG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Jaf-Wd-zzt">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="CI1-pQ-AMO"/>
+                        <segue destination="hSb-Hb-ya1" kind="relationship" relationship="viewControllers" id="gW7-Ll-mHz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Izz-iF-98x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="157.5" y="239.25"/>
         </scene>

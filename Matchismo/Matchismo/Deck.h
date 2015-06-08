@@ -6,9 +6,6 @@
 //  Copyright (c) 2015 Ryan Walberg. All rights reserved.
 //
 
-#ifndef LearningObjectiveC_Deck_h
-#define LearningObjectiveC_Deck_h
-
 #include "Card.h"
 
 @interface Deck : NSObject
@@ -18,5 +15,3 @@
 - (Card *)drawRandomCard;
 
 @end
-
-#endif
