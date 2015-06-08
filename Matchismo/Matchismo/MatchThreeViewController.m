@@ -25,7 +25,7 @@
 - (NSAttributedString *)titleForCard:(Card *)card
 {
     PlayingCard *playingCard = (PlayingCard *) card;
-    UIColor *textColor = [playingCard colour];
+    UIColor *textColor = [playingCard color];
     return [[NSAttributedString alloc] initWithString:playingCard.description attributes:@{ NSForegroundColorAttributeName: textColor }];
 }
 

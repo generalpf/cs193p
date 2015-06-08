@@ -24,7 +24,8 @@
 - (NSAttributedString *)titleForCard:(Card *)card
 {
     SetCard *setCard = (SetCard *) card;
-    return nil;
+    UIColor *textColor = [setCard color];
+    return [[NSAttributedString alloc] initWithString:setCard.description attributes:@{ NSForegroundColorAttributeName: textColor }];
 }
 
 @end

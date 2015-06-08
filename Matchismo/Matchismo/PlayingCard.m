@@ -33,7 +33,7 @@
 
 + (NSArray *)validSuits
 {
-    return @[@"♣︎",@"♠︎",@"♥︎",@"♦︎"];
+    return @[@"♣",@"♠",@"♥",@"♦"];
 }
 
 - (NSString *)suit
@@ -48,9 +48,9 @@
     }
 }
 
-- (UIColor *)colour
+- (UIColor *)color
 {
-    if ([self.suit isEqualToString:@"♣︎"] || [self.suit isEqualToString:@"♠︎"]) {
+    if ([self.suit isEqualToString:@"♣"] || [self.suit isEqualToString:@"♠"]) {
         return [UIColor blackColor];
     }
     else {
