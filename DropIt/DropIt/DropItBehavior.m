@@ -9,8 +9,11 @@
 #import "DropItBehavior.h"
 
 @interface DropItBehavior()
+
 @property (strong, nonatomic) UIGravityBehavior *gravity;
 @property (strong, nonatomic) UICollisionBehavior *collider;
+@property (strong, nonatomic) UIDynamicItemBehavior *dynamicItem;
+
 @end
 
 @implementation DropItBehavior
@@ -21,6 +24,7 @@
     if (self) {
         [self addChildBehavior:self.gravity];
         [self addChildBehavior:self.collider];
+        [self addChildBehavior:self.dynamicItem];
     }
     return self;
 }
@@ -43,16 +47,27 @@
     return _collider;
 }
 
+- (UIDynamicItemBehavior *)dynamicItem
+{
+    if (!_dynamicItem) {
+        _dynamicItem = [[UIDynamicItemBehavior alloc] init];
+        _dynamicItem.allowsRotation = NO;
+    }
+    return _dynamicItem;
+}
+
 - (void)addItem:(id <UIDynamicItem>)item
 {
     [self.gravity addItem:item];
     [self.collider addItem:item];
+    [self.dynamicItem addItem:item];
 }
 
 - (void)removeItem:(id <UIDynamicItem>)item
 {
     [self.gravity removeItem:item];
     [self.collider removeItem:item];
+    [self.dynamicItem removeItem:item];
 }
 
 @end
