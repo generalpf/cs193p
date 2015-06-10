@@ -13,6 +13,7 @@
 @property (strong, nonatomic) UIImageView *imageView;
 @property (strong, nonatomic) UIImage *image;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -47,12 +48,36 @@
     self.imageView.image = image;
     [self.imageView sizeToFit];
     self.scrollView.contentSize = self.image ? self.image.size : CGSizeZero;
+    [self.activityIndicator stopAnimating];
 }
 
 - (void)setImageURL:(NSURL *)imageURL
 {
     _imageURL = imageURL;
-    self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.imageURL]];
+    [self startDownloadingImage];
+}
+
+#pragma mark - Core
+
+-(void)startDownloadingImage
+{
+    self.image = nil;
+    if (self.imageURL) {
+        [self.activityIndicator startAnimating];
+        NSURLRequest *request = [NSURLRequest requestWithURL:self.imageURL];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
+        NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+            if (!error) {
+                if ([request.URL isEqual:self.imageURL]) {
+                    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:location]];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        self.image = image;
+                    });
+                }
+            }
+        }];
+        [task resume];
+    }
 }
 
 #pragma mark - UIScrollViewDelegate

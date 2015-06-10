@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Imaginarium-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -91,7 +91,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="hxX-pa-aee"/>
+                    <navigationItem key="navigationItem" title="Imaginarium" id="hxX-pa-aee"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +112,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vra-vw-x6j">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-jZ-Ol2">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -121,31 +125,40 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="vra-vw-x6j" firstAttribute="leading" secondItem="2te-f6-E3G" secondAttribute="leadingMargin" id="T0U-Be-MzT"/>
+                            <constraint firstAttribute="centerX" secondItem="Qso-jZ-Ol2" secondAttribute="centerX" id="dOG-JK-Aoz"/>
+                            <constraint firstAttribute="centerY" secondItem="Qso-jZ-Ol2" secondAttribute="centerY" id="wXo-tN-I3g"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="vra-vw-x6j"/>
+                                <exclude reference="Qso-jZ-Ol2"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="AQb-sq-onb"/>
                                 <exclude reference="HTb-LI-D7v"/>
                                 <exclude reference="T0U-Be-MzT"/>
+                                <exclude reference="dOG-JK-Aoz"/>
+                                <exclude reference="wXo-tN-I3g"/>
                                 <exclude reference="FAM-V6-CJF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="vra-vw-x6j"/>
+                                <include reference="Qso-jZ-Ol2"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="AQb-sq-onb"/>
                                 <include reference="HTb-LI-D7v"/>
                                 <include reference="T0U-Be-MzT"/>
+                                <include reference="dOG-JK-Aoz"/>
+                                <include reference="wXo-tN-I3g"/>
                                 <include reference="FAM-V6-CJF"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Qso-jZ-Ol2" id="hdb-RL-sdA"/>
                         <outlet property="scrollView" destination="vra-vw-x6j" id="TIi-7m-g1g"/>
                     </connections>
                 </viewController>
@@ -173,6 +186,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TQh-3p-Iwh"/>
+        <segue reference="c4j-yu-1mL"/>
     </inferredMetricsTieBreakers>
 </document>
