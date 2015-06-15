@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U4C-HO-EyQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +24,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2go-AD-oFm" kind="show" identifier="photo_2" id="0hs-QZ-KzN"/>
+                                    <segue destination="2go-AD-oFm" kind="show" identifier="photo_1" id="0hs-QZ-KzN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILb-qE-5qO">
@@ -41,7 +42,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2go-AD-oFm" kind="show" identifier="photo_1" id="c4j-yu-1mL"/>
+                                    <segue destination="2go-AD-oFm" kind="show" identifier="photo_2" id="c4j-yu-1mL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,12 +64,12 @@
                                 <exclude reference="4Ry-bn-Sjw"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4rA-0L-1MG"/>
                                 <exclude reference="2PD-oi-DNx"/>
                                 <exclude reference="5Z3-Jr-78T"/>
                                 <exclude reference="O6f-zd-yAO"/>
                                 <exclude reference="u5H-YN-vcc"/>
                                 <exclude reference="xr2-0A-dl6"/>
+                                <exclude reference="4rA-0L-1MG"/>
                                 <exclude reference="KmZ-Hz-5Ip"/>
                                 <exclude reference="p2i-88-3ck"/>
                             </mask>
@@ -80,12 +81,12 @@
                                 <include reference="4Ry-bn-Sjw"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4rA-0L-1MG"/>
                                 <include reference="2PD-oi-DNx"/>
                                 <include reference="5Z3-Jr-78T"/>
                                 <include reference="O6f-zd-yAO"/>
                                 <include reference="u5H-YN-vcc"/>
                                 <include reference="xr2-0A-dl6"/>
+                                <include reference="4rA-0L-1MG"/>
                                 <include reference="KmZ-Hz-5Ip"/>
                                 <include reference="p2i-88-3ck"/>
                             </mask>
@@ -134,12 +135,12 @@
                                 <exclude reference="Qso-jZ-Ol2"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="FAM-V6-CJF"/>
+                                <exclude reference="dOG-JK-Aoz"/>
+                                <exclude reference="wXo-tN-I3g"/>
                                 <exclude reference="AQb-sq-onb"/>
                                 <exclude reference="HTb-LI-D7v"/>
                                 <exclude reference="T0U-Be-MzT"/>
-                                <exclude reference="dOG-JK-Aoz"/>
-                                <exclude reference="wXo-tN-I3g"/>
-                                <exclude reference="FAM-V6-CJF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -148,12 +149,12 @@
                                 <include reference="Qso-jZ-Ol2"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="FAM-V6-CJF"/>
+                                <include reference="dOG-JK-Aoz"/>
+                                <include reference="wXo-tN-I3g"/>
                                 <include reference="AQb-sq-onb"/>
                                 <include reference="HTb-LI-D7v"/>
                                 <include reference="T0U-Be-MzT"/>
-                                <include reference="dOG-JK-Aoz"/>
-                                <include reference="wXo-tN-I3g"/>
-                                <include reference="FAM-V6-CJF"/>
                             </mask>
                         </variation>
                     </view>
@@ -186,6 +187,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c4j-yu-1mL"/>
+        <segue reference="TQh-3p-Iwh"/>
     </inferredMetricsTieBreakers>
 </document>
