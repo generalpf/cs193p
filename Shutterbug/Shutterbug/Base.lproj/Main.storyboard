@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Just Posted Flickr Photos View Controller-->
+        <!--Shutterbug-->
         <scene sceneID="ktU-nT-I50">
             <objects>
                 <tableViewController id="v4M-vs-djC" customClass="JustPostedFlickrPhotosViewController" sceneMemberID="viewController">
@@ -13,6 +13,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" id="dGc-va-QEp">
+                            <rect key="frame" x="0.0" y="130" width="600" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Flickr Photo Cell" textLabel="6hA-NS-JMB" detailTextLabel="7Vz-oC-1fC" style="IBUITableViewCellStyleValue1" id="yMr-qE-XKO">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -43,7 +48,7 @@
                             <outlet property="delegate" destination="v4M-vs-djC" id="Ce4-AK-rip"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="GDw-Rs-yAX"/>
+                    <navigationItem key="navigationItem" title="Shutterbug" id="GDw-Rs-yAX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4d-bM-HYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
