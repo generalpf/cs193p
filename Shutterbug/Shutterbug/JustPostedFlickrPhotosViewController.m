@@ -27,10 +27,15 @@
 
 - (void)fetchPhotos
 {
-    NSArray *photos = [FlickrFetcher latestGeoreferencedPhotos];
-#warning Blocks the main thread
-    NSLog(@"Flickr results = %@", photos);
-    self.photos = photos;
+    dispatch_queue_t backgroundQueue = dispatch_queue_create("Flickr fetcher queue", NULL);
+    if (backgroundQueue) {
+        dispatch_async(backgroundQueue, ^{
+            NSArray *photos = [FlickrFetcher latestGeoreferencedPhotos];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.photos = photos;
+            });
+        });
+    }
 }
 
 /*
