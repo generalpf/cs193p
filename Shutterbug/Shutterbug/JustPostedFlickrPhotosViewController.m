@@ -11,6 +11,8 @@
 
 @interface JustPostedFlickrPhotosViewController ()
 
+- (IBAction)refreshControl:(UIRefreshControl *)sender;
+
 @end
 
 @implementation JustPostedFlickrPhotosViewController
@@ -27,12 +29,14 @@
 
 - (void)fetchPhotos
 {
+    [self.refreshControl beginRefreshing];
     dispatch_queue_t backgroundQueue = dispatch_queue_create("Flickr fetcher queue", NULL);
     if (backgroundQueue) {
         dispatch_async(backgroundQueue, ^{
             NSArray *photos = [FlickrFetcher latestGeoreferencedPhotos];
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.photos = photos;
+                [self.refreshControl endRefreshing];
             });
         });
     }
@@ -47,5 +51,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)refreshControl:(UIRefreshControl *)sender
+{
+    [self fetchPhotos];
+}
 
 @end
